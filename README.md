@@ -42,3 +42,7 @@
 ## API Used
 
 This project uses the [InspiroBot API](https://inspirobot.me/) to generate random inspirational quotes.
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/CyberSphinxxx/RandomQuoteGenerator/issues) if you want to contribute.
