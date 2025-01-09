@@ -50,3 +50,12 @@ Contributions, issues, and feature requests are welcome. Feel free to check [iss
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+## Screenshots
+
+### Dark Mode
+![Opera Snapshot_2025-01-10_054732_127 0 0 1](https://github.com/user-attachments/assets/e71dbf90-775b-457b-bdf6-94c220d32fbc)
+
+### Light Mode
+![Opera Snapshot_2025-01-10_054816_127 0 0 1](https://github.com/user-attachments/assets/db4e9e7c-14f1-4db0-8df3-ba105b05ba71)
+
