@@ -53,7 +53,7 @@ function downloadQuote() {
     if (currentQuoteUrl) {
         const link = document.createElement('a');
         link.href = currentQuoteUrl;
-        link.download = 'inspirational_quote.jpg';
+        link.download = 'RandomQuote.jpg';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
