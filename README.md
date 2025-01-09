@@ -46,3 +46,7 @@ This project uses the [InspiroBot API](https://inspirobot.me/) to generate rando
 ## Contributing
 
 Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/CyberSphinxxx/RandomQuoteGenerator/issues) if you want to contribute.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
