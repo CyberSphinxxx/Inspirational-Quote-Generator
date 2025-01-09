@@ -8,3 +8,10 @@
 - Download quote images
 - Toggle between light and dark themes
 - Responsive design for various screen sizes
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- InspiroBot API
