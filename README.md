@@ -15,3 +15,10 @@
 - CSS3
 - JavaScript (ES6+)
 - InspiroBot API
+
+## How It Works
+
+1. The application fetches a random quote image from the InspiroBot API.
+2. Users can generate new quotes, save their favorites, and download quote images.
+3. Saved quotes are displayed in a scrollable list below the main quote display.
+4. The theme toggle allows users to switch between light and dark modes for comfortable viewing.
