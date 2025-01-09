@@ -53,12 +53,19 @@ function downloadQuote() {
     if (currentQuoteUrl) {
         const link = document.createElement('a');
         link.href = currentQuoteUrl;
-        link.download = 'RandomQuote.jpg';
+        link.target = '_blank'; // Open in a new tab
+        link.rel = 'noopener noreferrer';
+        link.textContent = 'Click here to download the image';
         document.body.appendChild(link);
+
+        // Optionally auto-click the link
         link.click();
-        document.body.removeChild(link);
+        setTimeout(() => document.body.removeChild(link), 5000);
+    } else {
+        console.error('No quote URL available.');
     }
 }
+
 
 function toggleTheme() {
     document.body.classList.toggle('light-theme');
