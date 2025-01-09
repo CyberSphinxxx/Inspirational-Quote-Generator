@@ -16,7 +16,7 @@ body {
 .container {
     background-color: var(--card-background);
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     padding: 1.5rem;
     text-align: center;
     max-width: 90%;
@@ -30,6 +30,7 @@ h1 {
     color: var(--primary-color);
     margin: 0 0 1rem;
     font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 #quote-container {
     background-color: rgba(52, 152, 219, 0.1);
@@ -47,7 +48,7 @@ h1 {
     max-height: 100%;
     object-fit: contain;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .button-container {
     display: flex;
@@ -69,7 +70,7 @@ h1 {
     justify-content: center;
 }
 .btn:hover {
-    background-color: #2980b9;
+    background-color: var(--button-hover);
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -77,13 +78,13 @@ h1 {
     background-color: var(--secondary-color);
 }
 #save-btn:hover {
-    background-color: #27ae60;
+    background-color: var(--save-button);
 }
 #download-btn {
-    background-color: #9b59b6;
+    background-color: var(--download-button);
 }
 #download-btn:hover {
-    background-color: #8e44ad;
+    background-color: #9b59b6;
 }
 #saved-quotes {
     text-align: left;
@@ -117,7 +118,7 @@ h1 {
     border-radius: 5px;
 }
 .remove-btn {
-    background-color: #e74c3c;
+    background-color: var(--remove-button);
     color: white;
     border: none;
     padding: 0.3rem 0.6rem;
@@ -145,8 +146,34 @@ h1 {
     font-size: 1.5rem;
     cursor: pointer;
 }
-.dark-theme {
-    --background-color: #2c3e50;
-    --text-color: #ecf0f1;
-    --card-background: #34495e;
+.light-theme {
+    --background-color: #f0f4f8;
+    --text-color: #2c3e50;
+    --card-background: #ffffff;
+}
+.credit {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    color: var(--text-color);
+    opacity: 0.7;
+}
+#github-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+#github-link:hover {
+    opacity: 1;
+}
+#github-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
 }
