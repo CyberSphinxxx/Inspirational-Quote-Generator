@@ -39,4 +39,6 @@
 5. Click the "Download" button to download the current quote image.
 6. Toggle between light and dark themes using the sun/moon icon in the top right corner.
 
+## API Used
 
+This project uses the [InspiroBot API](https://inspirobot.me/) to generate random inspirational quotes.
