@@ -8,11 +8,21 @@
     <link rel="stylesheet" href="/src/css/main.css">
 </head>
 <body>
-    <h1>Inspirational Quote Generator</h1>
-    <div id="quote-container">
-        <p>Click the button below to generate a quote!</p>
+    <button id="theme-toggle">🌓</button>
+    <div class="container">
+        <h1>InspiroBot Quote Generator</h1>
+        <div id="quote-container">
+            <img id="quote-image" src="/placeholder.svg" alt="Inspirational Quote" style="display: none;">
+        </div>
+        <div class="button-container">
+            <button id="generate" class="btn">Generate Quote</button>
+            <button id="save-btn" class="btn">Save Quote</button>
+        </div>
+        <div id="saved-quotes">
+            <h2>Saved Quotes</h2>
+            <ul id="saved-list"></ul>
+        </div>
     </div>
-    <button id="generate-quote">Generate Quote</button>
 
     <script src="/src/js/main.js"></script>
 </body>
