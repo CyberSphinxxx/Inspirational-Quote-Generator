@@ -2,6 +2,7 @@ const quoteContainer = document.getElementById('quote-container');
 const quoteImage = document.getElementById('quote-image');
 const generateButton = document.getElementById('generate');
 const saveButton = document.getElementById('save-btn');
+const downloadButton = document.getElementById('download-btn');
 const savedQuotes = document.getElementById('saved-quotes');
 const savedList = document.getElementById('saved-list');
 const themeToggle = document.getElementById('theme-toggle');
@@ -48,12 +49,24 @@ function saveQuote() {
     }
 }
 
+function downloadQuote() {
+    if (currentQuoteUrl) {
+        const link = document.createElement('a');
+        link.href = currentQuoteUrl;
+        link.download = 'inspirational_quote.jpg';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+}
+
 function toggleTheme() {
     document.body.classList.toggle('dark-theme');
 }
 
 generateButton.addEventListener('click', generateQuote);
 saveButton.addEventListener('click', saveQuote);
+downloadButton.addEventListener('click', downloadQuote);
 themeToggle.addEventListener('click', toggleTheme);
 
 // Generate initial quote
