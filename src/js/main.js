@@ -61,7 +61,8 @@ function downloadQuote() {
 }
 
 function toggleTheme() {
-    document.body.classList.toggle('dark-theme');
+    document.body.classList.toggle('light-theme');
+    themeToggle.textContent = document.body.classList.contains('light-theme') ? '🌙' : '☀️';
 }
 
 generateButton.addEventListener('click', generateQuote);
